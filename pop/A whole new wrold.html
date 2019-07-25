@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>   
+</head>
+<script>
+    (function($) {
+        $( document ).ready( function() {
+            $('.wrapper button').click(function(){
+                var prev_control=$(this).prev('.control');
+                if(! prev_control.hasClass('on')){
+                    prev_control.addClass('on');
+                    $(this).html('감추기');
+                }else{
+                    prev_control.removeClass('on');
+                    prev_control.find('.word_wrap').removeClass('on');
+                    $(this).html('보기');
+                }
+            })
+
+            $('.control .word_wrap').click(function(){
+                if(!$(this).hasClass('on')){
+                    $(this).addClass('on');
+                }else{
+                    $(this).removeClass('on');
+                }
+            })
+        });
+    })(jQuery);
+</script>
+<style>
+*{margin:0; padding:0;}
+.wrapper{color: #222; font-size: 14px;}
+.wrapper .tit{font-size: 24px; margin-bottom: 4px;}  
+.wrapper .artist{margin-bottom: 20px;}
+.wrapper .kor{margin-bottom: 10px;}
+.wrapper .en{margin-bottom: 18px;}
+.wrapper button{width:80px; height: 28px; margin-left:10px; border:1px solid #000;}
+.wrapper .control{visibility: hidden;}
+.wrapper .control.on{visibility:visible;}
+.wrapper .control .word_wrap{margin:0 6px; border-bottom: 1px solid #000; cursor: pointer;}
+.wrapper .control .word_wrap.on .word{visibility: visible;}
+.wrapper .control .word{visibility: hidden;}
+</style>
+<body>
+    <p>[##_Image|kage@FrTKE/btqwaHXt0f6/iAK1KNjBixb2GuOudjfsCk/img.jpg|alignLeft|data-filename="movie_image.jpg"|_##]</p>
+    <p>&nbsp;</p>
+    <p>이번에 영화 관람 후 빠지게 된 영화 알라딘</p>
+    <p>재미,스토리,영상미 모든게 좋았던 영화.</p>
+    <p>거기다가 OST까지 너무 좋음</p>
+    <p>&nbsp;</p>
+    <p>그 중에서 메인 OST인 <strong>A whole new world</strong>로 공부 해보기</p>
+    <p>&nbsp;</p>
+    <figure data-ke-type="video" data-ke-style="alignCenter" data-video-host="youtube" data-video-url="https://www.youtube.com/watch?v=eitDnP0_83k" data-video-thumbnail="https://scrap.kakaocdn.net/dn/bmPCwS/hyBFBvgAFO/IF7zUTh4ysbYf6iyNMqIr0/img.jpg?width=1280&amp;height=720&amp;face=0_0_1280_720" data-original-url="https://www.youtube.com/watch?v=eitDnP0_83k"><iframe src="https://www.youtube.com/embed/eitDnP0_83k" width="860" height="484" frameborder="0" allowfullscreen="true"></iframe>
+        <figcaption></figcaption>
+        </figure>
+    <hr></hr>
+    <div class="wrapper">
+        <h1 class="tit">A whole new world</h1>
+        <div style="font-size: 12px" class="artist">Artist: Mena Massoud,Naomi Scott</div>
+        <p>&nbsp;</p>
+        <div class="lyrics">
+            <div class="kor">나는 당신에게 세상을 보여 줄 수 있어요.</div>
+            <div class="en">
+                I can <span class="control"> show you the world.</span> 
+                <button>보기</button> 
+            </div>
+            
+            <div class="kor">반짝이고 아른거리는 눈부신 세상을</div>
+            <div class="en">
+                <span class="control">Shining <span class="word_wrap"><span class="word">shimmering</span></span> splendid</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">공주님 이제 마음이 가는대로 했던 적이 언제였는지 말해봐요.</div>
+            <div class="en">
+                <span class="control">Tell me princess now when did <span class="word_wrap"><span class="word">last let</span></span> your <span class="word_wrap"><span class="word">heart decide</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">나는 당신에게 보여드릴 수 있어요.</div>
+            <div class="en">
+                I can <span class="control">open you eyes</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">아름답고 경이로운 곳으로 데려갈게요.</div>
+            <div class="en">
+                <span class="control">Take you <span class="word_wrap"><span class="word">wonder by wonder</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">마법의 양탄자를 타고 이리저리 날아가면서요.</div>
+            <div class="en">
+                <span class="control"><span class="word_wrap"><span class="word">Over sideways</span></span> and under on a magic carpet ride</span> 
+                <button>보기</button> 
+            </div>
+            
+            <div class="kor">완전히 새로운 세상</div>
+            <div class="en">
+                <span class="control">A whole new world</span> 
+                <button>보기</button> 
+            </div>
+            
+            <div class="kor">처음보는 환상적인 광경이죠</div>
+            <div class="en">
+                    A new <span class="control">fantastic point of view</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">아무도 우리에게 안 된다고 말하거나</div>
+            <div class="en">
+                    no one<span class="control"><span class="word_wrap"><span class="word">to tell</span></span>us no</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">어디로 가라하거나 그저 꿈이라고 말하지 않죠.</div>
+            <div class="en">
+                or <span class="control">where to go or<span class="word_wrap"><span class="word">say we're only dreamingy</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">완전히 새로운 세상</div>
+            <div class="en">
+                <span class="control">A whole new world</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">내가 지금까지 전혀 몰랐던 눈부신 곳</div>
+            <div class="en">
+                <span class="control"><span class="word_wrap"><span class="word">A dazzling place</span></span>I never knew</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">하지만 높이 있는 여기서, 분명해졌어요.</div>
+            <div class="en">
+                but <span class="control">when I'm <span class="word_wrap"><span class="word">way up</span></span> here, <span class="word_wrap"><span class="word">It's crystal clear</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">지금 이 새로운 세상에 당신과 함께 있다는 것이</div>
+            <div class="en">
+                That <span class="control"> now I'm  <span class="word_wrap"><span class="word">in a whole new world</span></span> with you</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">믿을 수 없은 광경과 말로 설명할 수 없는 기분</div>
+            <div class="en">
+                <span class="control">Unbelievable sights, Indescribable feeling</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">높이 날기도하고 떨어지기도 하면서 자유롭게 날아요.</div>
+            <div class="en">
+                <span class="control">Soaring tumbling freewheeling</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">끝없이 빛나는 하늘을 지나</div>
+            <div class="en">
+                <span class="control">Through <span class="word_wrap"><span class="word">an endless</span></span> diamond sky</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">완전히 새로운 세상</div>
+            <div class="en">
+                <span class="control">A whole new world</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">절대 눈 감지 말아요</div>
+            <div class="en">
+                <span class="control"><span class="word_wrap"><span class="word">Don't you dare</span></span> close your eyes</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">볼 것들이 수 없이 많아요</div>
+            <div class="en">
+                <span class="control">A hundred thousand <span class="word_wrap"><span class="word">things to see</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">숨을 참으면 괜찮을 거에요.</div>
+            <div class="en">
+                <span class="control">Hold your breath it <span class="word_wrap"><span class="word">gets better</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">내가 마치 별똥별이 된 것 같아요.</div>
+            <div class="en">
+                <span class="control">I'm like <span class="word_wrap"><span class="word">a shooting star</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">너무 멀리 날아와서, 나는 내가 있던 곳으로 돌아갈 수 없어요.</div>
+            <div class="en">
+                <span class="control">I've come so far, I can't go back to where I <span class="word_wrap"><span class="word">used to be</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">완전히 새로운 세상</div>
+            <div class="en">
+                <span class="control">A whole new world</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">어디를 봐도 놀라워요.</div>
+            <div class="en">
+                <span class="control">Every turn</span> a suprise
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">새로운 지평선을 따라가요</div>
+            <div class="en">
+                With <span class="control"> new horizons <span class="word_wrap"><span class="word">to pursue</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">모든 순간이 특별해요</div>
+            <div class="en">
+                <span class="control">Every moment</span> red-letter
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">어디라도 쫓아갈 거에요.</div>
+            <div class="en">
+                I'll <span class="control">chase them anywhere.</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">시간은 충분해요</div>
+            <div class="en">
+                    There's time <span class="control">to spare</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">이 새로운 세상을 당신과 함께하고 싶어요</div>
+            <div class="en">
+                <span class="control"><span class="word_wrap"><span class="word">Let me share</span></span> this whole new world with you</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">완전히 새로운 세상</div>
+            <div class="en">
+                <span class="control">A whole new world</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">우리가 있을 곳이죠.</div>
+            <div class="en">
+                That's <span class="control">where we'll be</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">당신과 나를 위한 황홀한 비행, 경이로운 곳</div>
+            <div class="en">
+                <span class="control"><span class="word_wrap"><span class="word">A thrilling chase,</span></span> A wondrous place for you and me</span> 
+                <button>보기</button> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

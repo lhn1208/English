@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+*{margin:0; padding:0;}
+.wrapper{padding:40px; color: #222; font-size: 14px;}
+.wrapper h1{font-size: 24px; margin-bottom: 20px;}
+.wrapper .kor{margin-bottom: 10px;}
+.wrapper .en{margin-bottom: 18px;}
+.wrapper button{width:80px; height: 28px; margin-left:10px;}
+.wrapper .control{visibility: hidden;}
+.wrapper .control.on{visibility:visible;}
+.wrapper .control .word_wrap{margin:0 6px; border-bottom: 1px solid #000; cursor: pointer;}
+.wrapper .control .word_wrap.on .word{visibility: visible;}
+.wrapper .control .word{visibility: hidden;}

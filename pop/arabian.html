@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    (function($) {
+        $( document ).ready( function() {
+            $('.wrapper button').click(function(){
+                var prev_control=$(this).prev('.control');
+                if(! prev_control.hasClass('on')){
+                    prev_control.addClass('on');
+                    $(this).html('감추기');
+                }else{
+                    prev_control.removeClass('on');
+                    prev_control.find('.word_wrap').removeClass('on');
+                    $(this).html('보기');
+                }
+            })
+
+            $('.control .word_wrap').click(function(){
+                if(!$(this).hasClass('on')){
+                    $(this).addClass('on');
+                }else{
+                    $(this).removeClass('on');
+                }
+            })
+        });
+    })(jQuery);
+</script>
+<style>
+*{margin:0; padding:0;}
+.wrapper{color: #222; font-size: 14px;}
+.wrapper .tit{font-size: 24px; margin-bottom: 20px;}
+.wrapper .artist{margin-bottom: 40px;}
+.wrapper .kor{margin-bottom: 10px;}
+.wrapper .en{margin-bottom: 18px;}
+.wrapper button{width:80px; height: 28px; margin-left:10px; border:1px solid #000;}
+.wrapper .control{visibility: hidden;}
+.wrapper .control.on{visibility:visible;}
+.wrapper .control .word_wrap{margin:0 6px; border-bottom: 1px solid #000; cursor: pointer;}
+.wrapper .control .word_wrap.on .word{visibility: visible;}
+.wrapper .control .word{visibility: hidden;}
+</style>
+<body>
+    <p>[##_Image|kage@bbfNkW/btqweaZw7dg/dkJyZTlUMbN9CYZoxkuSoK/img.jpg|alignLeft|data-filename="movie_image.jpg"|_##]</p>
+    <p>&nbsp;</p>
+    <p>알라딘 두번째 OST Arabian Nights</p>
+    <p>&nbsp;</p>
+    <figure data-ke-type="video" data-ke-style="alignCenter" data-video-host="youtube" data-video-url="https://www.youtube.com/watch?v=T9GmO_WFhjQ" data-video-thumbnail="https://scrap.kakaocdn.net/dn/3widP/hyBGOOMtdV/R1F4DSoP3mCycqVDW1PElK/img.jpg?width=1280&amp;height=720&amp;face=0_0_1280_720" data-original-url="https://www.youtube.com/watch?v=T9GmO_WFhjQ"><iframe src="https://www.youtube.com/embed/T9GmO_WFhjQ" width="860" height="484" frameborder="0" allowfullscreen="true"></iframe>
+        <figcaption></figcaption>
+        </figure>
+    <hr></hr>
+    <div class="wrapper">
+        <h1 class="tit">Arabian Nights</h1>
+        <div style="font-size: 12px" class="artist">Artist: Will smith</div>
+        <div class="lyrics">
+            <div class="kor">오, 땅을 상상해봐, 그곳은 먼 곳이야</div>
+            <div class="en">
+                Oh, <span class="control">imagine a land, it's <span class="word_wrap"><span class="word">a faraway place</span></span></span> 
+                <button>보기</button> 
+            </div>
+            
+            <div class="kor">캐러밴 낙타가 돌아다니는 곳 </div>
+            <div class="en">
+                <span class="control">Where the caravan camels roam</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">당신이 모든 문화와 언어 사이를 방황하는 곳</div>
+            <div class="en">
+                <span class="control">Where you wander <span class="word_wrap"><span class="word">among every culture and tongue</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">혼란스럽지만, 이봐, 집이야</div>
+            <div class="en">
+                It's <span class="control"> chaotic,</span> but hey, it's home
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">바람이 동쪽에서 불 때</div>
+            <div class="en">
+                <span class="control">When the wind's from the east</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">해가 서쪽에서 뜨고</div>
+            <div class="en">
+                And the sun's <span class="control">from the west</span> 
+                <button>보기</button> 
+            </div>
+            
+            <div class="kor">그리고 모래시계의 시간은 맞아</div>
+            <div class="en">
+                And <span class="control">the sand in the glass is right </span> 
+                <button>보기</button> 
+            </div>
+            
+            <div class="kor">이리와 앉아, 잠깐 들러봐</div>
+            <div class="en">
+                    Come on down <span class="control">stop on by</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">양탄자를 띄우고 날아가</div>
+            <div class="en">
+                    <span class="control">Hop <span class="word_wrap"><span class="word">a carpet and fly</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">또 다른 아라비안 밤으로</div>
+            <div class="en">
+                <span class="control">To another Arabian night </span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">너가 전설적인 시장의 거리를 가로지를 때</div>
+            <div class="en">
+                As <span class="control">you wind through the streets <span class="word_wrap"><span class="word">at the fabled bazaars</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">카르다몸이 뒤죽박죽으로 채워져있는 가판대가 있는</div>
+            <div class="en">
+                With <span class="control">the cardamom-cluttered stalls</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">너는 모든 향신료 냄세를 맡을 수 있어</div>
+            <div class="en">
+                  You can <span class="control">smell every spice</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">너가 실크와 새틴 숄의 가격을 흥정하는 동안</div>
+            <div class="en">
+                <span class="control">While you <span class="word_wrap"><span class="word">haggle the price</span></span></span> Of the silks and the satin shawls
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">오, 흘러나오는 음악</div>
+            <div class="en">
+                Oh, <span class="control">the music that plays</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">너가 미로를 통과하는 때</div>
+            <div class="en">
+                As <span class="control">you <span class="word_wrap"><span class="word">move through a maze</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">너의 순수한 기쁨의 안개속에서</div>
+            <div class="en">
+                In the <span class="control">haze of your pure delight</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">너는 춤에 빠져들었다.</div>
+            <div class="en">
+                <span class="control">You are <span class="word_wrap"><span class="word">caught in</span></span> a dance</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">너는 무아지경에 빠졌다.</div>
+            <div class="en">
+                <span class="control">You are lost in <span class="word_wrap"><span class="word">the trance</span></span> </span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">또 다른 아라비안의 밤에</div>
+            <div class="en">
+                <span class="control">Of another Arabian night</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">아라비안 나이트. 아리비안들의 나날처럼</div>
+            <div class="en">
+                    Arabian nights. <span class="control"> Like Arabian days</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">종종 뜨거운 것보다 더 뜨겁지</div>
+            <div class="en">
+                <span class="control"><span class="word_wrap"><span class="word">More often than not</span></span> are hotter than hot</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">많은 좋은 방법으로</div>
+            <div class="en">
+                <span class="control">In a lot of good ways</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">아라비안 나이트. 아리비안들의 꿈들처럼</div>
+            <div class="en">
+                    Arabian nights. <span class="control"> Like Arabian dreams</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">이 신비로운 마법의 땅과 모래</div>
+            <div class="en">
+                This <span class="control"> <span class="word_wrap"><span class="word"> mystical land </span></span> of magic and sand</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">보이는 것 이상이다.</div>
+            <div class="en">
+                <span class="control">is more than it seems</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">너가 이끌어야 할 길이 있다.</div>
+            <div class="en">
+                <span class="control">There's a road that  <span class="word_wrap"><span class="word">may lead you</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">좋거나 탐욕을 향해</div>
+            <div class="en">
+                To <span class="control"> good or <span class="word_wrap"><span class="word">to greed</span></span> through</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">너가 희망하는 명령의 힘</div>
+            <div class="en">
+                <span class="control">The power your wishing commands</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">어둠을 펼쳐지게 하거나 엄청난 운을 찾아</div>
+            <div class="en">
+                <span class="control"><span class="word_wrap"><span class="word">Let</span></span> the darkness <span class="word_wrap"><span class="word">unfold</span></span> or find <span class="word_wrap"><span class="word">fortunes untold</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">너의 운명은 너의손에 달렸어.</div>
+            <div class="en">
+                Well, <span class="control">your destiny <span class="word_wrap"><span class="word">lies</span></span> in your hands</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">여기에 들어올 수 있는 자는 단 한 사람 </div>
+            <div class="en">
+                Only one <span class="control">may enter</span> here
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">진흙 속에 다이아몬처럼 가치가 있는 단 한 사람</div>
+            <div class="en">
+                One <span class="control">whose worth lies far within a diamond in the rough</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">아라비안 나이트. 아리비안들의 나날처럼</div>
+            <div class="en">
+                    Arabian nights. <span class="control"> Like Arabian days</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">그들은 흥미로워 보여, 비행기를 이륙하고 타는 것 같아.</div>
+            <div class="en">
+                  They <span class="control"> <span class="word_wrap"><span class="word">seem to</span></span> excite, <span class="word_wrap"><span class="word">take off and take</span></span> flight</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">놀랍고 경이로운 곳으로</div>
+            <div class="en">
+                   <span class="control">To shock and amaze</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">아라비안 나이트</div>
+            <div class="en">
+                    Arabian nights
+                <button>보기</button> 
+            </div>
+            <div class="kor">아라비안 달 아래</div>
+            <div class="en">
+                <span class="control">'Neath</span> Arabian moons
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">경계를 소홀한 자는 넘어지고 무너질거야</div>
+            <div class="en">
+                  A <span class="control">fool off his guard could fall and fall hard</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">모래사막으로 밖에서</div>
+            <div class="en">
+                  <span class="control">Out there  <span class="word_wrap"><span class="word">on the dunes</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

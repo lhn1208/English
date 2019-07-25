@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>   
+</head>
+<script>
+    (function($) {
+        $( document ).ready( function() {
+            $('.wrapper button').click(function(){
+                var prev_control=$(this).prev('.control');
+                if(! prev_control.hasClass('on')){
+                    prev_control.addClass('on');
+                    $(this).html('감추기');
+                }else{
+                    prev_control.removeClass('on');
+                    prev_control.find('.word_wrap').removeClass('on');
+                    $(this).html('보기');
+                }
+            })
+
+            $('.control .word_wrap').click(function(){
+                if(!$(this).hasClass('on')){
+                    $(this).addClass('on');
+                }else{
+                    $(this).removeClass('on');
+                }
+            })
+        });
+    })(jQuery);
+</script>
+<style>
+*{margin:0; padding:0;}
+.wrapper{color: #222; font-size: 14px;}
+.wrapper .tit{font-size: 24px; margin-bottom: 4px;}  
+.wrapper .artist{margin-bottom: 20px;}
+.wrapper .kor{margin-bottom: 10px;}
+.wrapper .en{margin-bottom: 18px;}
+.wrapper button{width:80px; height: 28px; margin-left:10px; border:1px solid #000;}
+.wrapper .control{visibility: hidden;}
+.wrapper .control.on{visibility:visible;}
+.wrapper .control .word_wrap{margin:0 6px; border-bottom: 1px solid #000; cursor: pointer;}
+.wrapper .control .word_wrap.on .word{visibility: visible;}
+.wrapper .control .word{visibility: hidden;}
+</style>
+<body>
+    <p>[##_Image|kage@bongAg/btqwsFLg3QY/nUcJD0nPCfU4EumB1jKA7K/img.jpg|alignLeft|data-filename="001.jpg"|_##]</p>
+    <p>&nbsp;</p>
+    <p>2018년에 발매된 노래로 역주행을 한 앤 마리의 2002</p>
+    <p>&nbsp;</p>
+    <figure data-ke-type="video" data-ke-style="alignLeft" data-video-host="youtube" data-video-url="https://www.youtube.com/watch?v=Il-an3K9pjg" data-video-thumbnail="https://scrap.kakaocdn.net/dn/uXbyO/hyBNOP2SyM/dNI46dp9kV2Ad9H4INjAV1/img.jpg?width=480&amp;height=360&amp;face=187_135_352_315" data-original-url="https://www.youtube.com/watch?v=Il-an3K9pjg"><iframe src="https://www.youtube.com/embed/Il-an3K9pjg" width="480" height="418" frameborder="0" allowfullscreen="true"></iframe>
+        <figcaption></figcaption>
+        </figure>
+    <hr></hr>
+    <div class="wrapper">
+        <h1 class="tit">2002</h1>
+        <div style="font-size: 12px" class="artist">Artist: Anne Marie</div>
+        <p>&nbsp;</p>
+        <div class="lyrics">
+            <div class="kor">네가 나의 입술에 키스했던 날을 언제나 기억할거야</div>
+            <div class="en">
+                I will always remember<span class="control"><span class="word_wrap"><span class="word">the day</span></span> you kissed my lips</span> 
+                <button>보기</button> 
+            </div>
+           
+            <div class="kor">깃털처럼 가벼웠어. 이렇게 했지</div>
+            <div class="en">
+                Light <span class="control">as feather, and<span class="word_wrap"><span class="word"> it went just like this</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">2002년의 그 여름보다 좋았던 적은 없어</div>
+            <div class="en">
+                No, It's <span class="control"><span class="word_wrap"><span class="word">never been better than</span></span> the summer of 2002 </span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">우리는 오직 11살 밖에 안 됐지만, 어른처럼 행동했지</div>
+            <div class="en">
+               <span class="control"> We were only 11, but <span class="word_wrap"><span class="word">acting like grown-ups</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">지금처럼 말야, 플라스틱 컵을 들이키며</div>
+            <div class="en">
+                Like we are<span class="control"> in the present,<span class="word_wrap"><span class="word">drinking from plastic cups</span></span></span> 
+                <button>보기</button> 
+            </div>
+            
+            <div class="kor">"사랑은 영원해"라고 노래하면서</div>
+            <div class="en">
+                Singing <span class="control">"love is forever and ever"</span> 
+                <button>보기</button> 
+            </div>
+            
+        
+            <div class="kor">그게 사실이었다고 생각해</div>
+            <div class="en">
+                    Well <span class="control"><span class="word_wrap"><span class="word">I guess that </span></span>was true</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">숲 한가운데에 있던 오래된 머스탱 후드 위에서 춤추며</div>
+            <div class="en">
+                Dancing <span class="control"> on the hood<span class="word_wrap"><span class="word">in the middle of the woods</span></span></span> of an old Mustang
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">어린 시절 친구들과 노래를 불렀지</div>
+            <div class="en">
+                where <span class="control">we sang songs with <span class="word_wrap"><span class="word">all our childhood friends</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">이렇게 했지</div>
+            <div class="en">
+                And <span class="control">it went like this</span> yeah
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">바이,바이 노래를 부르며 99번 실수를 했어</div>
+            <div class="en">
+                Oops, <span class="control"><span class="word_wrap"><span class="word">I got 99 problems, singing</span></span> bye, bye, bye</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">잠깐, 나와 함께 달리고 싶다면 연락하는 게 좋을거야, 한번 더</div>
+            <div class="en">
+                <span class="control">Hold up, if you wanna  <span class="word_wrap"><span class="word">go and take a ride</span></span> with me, better hit me</span> baby, one more time 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">숨이 차도록 노래하던 어린 시절의 너와 내 모습을 그려줘</div>
+            <div class="en">
+                Paint a picture for you and me of the days <span class="control">when we were young, singing <span class="word_wrap"><span class="word">at the top of both our lungs</span></span></span>
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">이제 우린 이불 속에 있지</div>
+            <div class="en">
+                Now <span class="control">we're under the covers</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">어느새 18살이야</div>
+            <div class="en">
+                <span class="control">Fast forward to </span> 18
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">우린 연인 그 이상이야</div>
+            <div class="en">
+                <span class="control">We are more than lovers</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">그래, 우리는 서로만 있으면 돼</div>
+            <div class="en">
+               Yeah, <span class="control">we are <span class="word_wrap"><span class="word">all we need</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">서로를 안고 있을 때, 나는 2002년으로 돌아가</div>
+            <div class="en">
+                When <span class="control"><span class="word_wrap">we're holding each other <span class="word">I'm taken back </span></span></span> to 2002
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">숲 한가운데에 있던 오래된 머스탱 후드 위에서 춤추며</div>
+            <div class="en">
+                <span class="control">Dancing on the hood<span class="word_wrap"><span class="word">in the middle of the woods</span></span></span> of an old Mustang
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">어린 시절 친구들과 노래를 불렀지</div>
+            <div class="en">
+                where <span class="control">we sang songs with <span class="word_wrap"><span class="word">all our childhood friends</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">이렇게 했지</div>
+            <div class="en">
+                And <span class="control">it went like this</span> yeah
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">바이,바이 노래를 불면서 99번 실수를 했어</div>
+            <div class="en">
+                Oops, <span class="control"><span class="word_wrap"><span class="word">I got 99 problems, singing</span></span> bye, bye, bye</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">잠깐, 나와 함께 달리고 싶다면 연락하는 게 좋을거야, 한번 더</div>
+            <div class="en">
+                <span class="control">Hold up, if you wanna  <span class="word_wrap"><span class="word">go and take a ride</span></span> with me, better hit me</span> baby, one more time 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">어린 시절의 너와 내 모습을 그려줘</div>
+            <div class="en">
+                Paint a picture for you and me of the days <span class="control">when we were young</span>
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">우리가 사랑에 빠진 그 날 숨이 차도록 노래했던 날</div>
+            <div class="en">
+                singing <span class="control"><span class="word_wrap"><span class="word"></span>at the top of both our lungs</span></span> on the day we fall in love</span>
+                <button>보기</button> 
+            </div>
+            
+            <div class="kor">우리가 사랑에 빠진 그 날</div>
+            <div class="en">
+                <span class="control">On the day</span> we fall in love
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">숲 한가운데에 있던 오래된 머스탱 후드 위에서 춤추며</div>
+            <div class="en">
+                <span class="control">Dancing on the hood<span class="word_wrap"><span class="word">in the middle of the woods</span></span></span> of an old Mustang
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">어린 시절 친구들과 노래를 불렀지</div>
+            <div class="en">
+                where <span class="control">we sang songs with <span class="word_wrap"><span class="word">all our childhood friends</span></span></span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">바이,바이 노래를 불면서 99번 실수를 했어</div>
+            <div class="en">
+                Oops, <span class="control"><span class="word_wrap"><span class="word">I got 99 problems, singing</span></span> bye, bye, bye</span> 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">잠깐, 나와 함께 달리고 싶다면 연락하는 게 좋을거야, 한번 더</div>
+            <div class="en">
+                <span class="control">Hold up, if you wanna  <span class="word_wrap"><span class="word">go and take a ride</span></span> with me, better hit me</span> baby, one more time 
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">숨이 차도록 노래하던 어린 시절의 너와 내 모습을 그려줘</div>
+            <div class="en">
+                Paint a picture for you and me of the days <span class="control">when we were young, singing <span class="word_wrap"><span class="word">at the top of both our lungs</span></span></span>
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">우리가 사랑에 빠진 그 날을</div>
+            <div class="en">
+                <span class="control">on the day</span> we fall in love
+                <button>보기</button> 
+            </div>
+
+            <div class="kor">우리가 사랑에 빠진 그 날을</div>
+            <div class="en">
+                <span class="control">On the day</span> we fall in love
+                <button>보기</button> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
